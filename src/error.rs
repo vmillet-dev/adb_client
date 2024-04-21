@@ -42,4 +42,7 @@ pub enum RustADBError {
     /// Remote ADB server does not support shell feature.
     #[error("Remote ADB server does not support shell feature")]
     ADBShellNotSupported,
+    /// Indicates that the device must be paired before attempting a connection over WI-FI
+    #[error("Device not paired before attempting to connect")]
+    ADBDeviceNotPaired,
 }
